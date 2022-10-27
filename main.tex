@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shashank Bidwai} \\ \vspace{1pt}
+    \small +1(704)264-7625 $|$ \href{mailto:sbidwai@uncc.edu}{\underline{shashankbidwai6@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{www.linkedin.com/in/shashank-bidwai-2b316415a/}} $|$
+\end{center}
+
+%-----------SUMMARY-----------
+% \section{Summary}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      {Diligent and forward-looking young Software Engineer with \textbf{2+ years} of experience. Motivated to build Scalable, Maintainable, and Robust software using the latest tools and technologies.
+%      } \\
+%     }}
+%  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Of North Carolina at Charlotte}{Charlotte, USA}
+      {Masters in Computer Science | GPA: NA}{Aug. 2022 present}
+    \resumeSubheading
+      {Vishwakarma Institute Of Technology}{Pune, India}
+      {Bachelors in Computer Science | GPA: 8.36/10}{Aug. 2016 -- May 2020}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C/C++, PostgreSQL, JavaScript,} \\
+     \textbf{Frameworks}{: Spring Boot, JUnit, RestAPI, Angular 8,JAX-Rs,ELK Stack,Mockito} \\
+     \textbf{Tools}{: Docker,Kubernetes,Maven, Git} \\
+     \textbf{Programming skills}{: Object Oriented Design, Design Patterns, Microservices architecture, Functional Programming, Data Structures and Algorithms}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Associate Solutions Architect}{Jan. 2022 -- May 2022}
+      {Kanad Business Solutions Ltd.}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Designed the products' back-end architecture and implemented micro-services using JAVA’s spring boot framework}
+        \resumeItem{Developed Search Engine which lets the users to search the stocks.}
+        \resumeItem{Integration of micro services with third party services.}
+        \resumeItem{Automating infrastructure using containerization and orchestration tools with docker and Kubernetes}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{July 2020 -- Dec 2021}
+      {Radix Health Technologies.}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Created REST APIs for the "DASH Self" product and enhanced the functionality of the already-existing APIs.}
+        \resumeItem{Implemented features on the UI using Angular 8 framework.}
+        \resumeItem{Developed a test automation feature that generates mock data in the integrated database to support the test cases that are run through the CI/CD pipeline.}
+        .\resumeItem{Documented APIs in Swagger.
+        }
+    \resumeItemListEnd  
+    
+    \resumeSubheading
+      {Software Engineer Intern}{Jan 2020 -- June 2020}
+      {Radix Health Technologies.}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Developed Test Automation Project (Web UI automation) using Selenium and JAVA and worked on “Rest Assured” project for end-to-end API testing using JAVA’s Spring Boot framework.}
+        \resumeItem{Included AWS services using Python's botoV3 APIs in the "Orange" project.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Project}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{PAPSReader.} $|$ \emph{Text Compressor application}}{           }
+          \resumeItemListStart
+            \resumeItem{Created an application that used Huffman coding to compress text files. Also examined the compression rates of various text files of different sizes. A total compression rate of roughly 40\% was achieved.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Autonomous Driving System}  \emph{    }}{    }
+          \resumeItemListStart
+            \resumeItem{The fundamental idea behind this project is to simulate a self-driving car. Here Autonomous Driving system is achieved by using Convolutional Neural Networks on Simulation.}
+            \resumeItem{Trained the datasets using Inception V3 model.}
+            \resumeItem{92\% accuracy was achieved.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+%-----------PROJECTS-----------
+\section{Awards and Achievements}
+    \resumeItemListStart
+        \resumeItem{Secured best project award at “NAVONMESH” EDAD (Engineering development and design) event for the project PAPSReader}\vspace{-4pt}
+    \resumeItemListEnd
+%-------------------------------------------
+\end{document}
